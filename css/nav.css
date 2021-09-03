@@ -1,0 +1,88 @@
+/* GLOBAL STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #C4C4C5;
+    font-weight: bolder;
+    font-size: 1em;
+    text-decoration: none;
+    background: #F8F9FB;
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#nav ul a.active {
+    background-color: #EFEFEF;
+    color: #000;
+    font-size: 1.1em;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3em 1.5em;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    flex: 3;
+}
+
+.navigation .user {
+    flex: 1;
+}
+
+#logout {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+@media all and (max-width: 1000px) {
+    .navigation ul {
+        flex-wrap: wrap;
+    }
+
+    .navigation li {
+        flex: 1 1 50%;
+    }
+
+    .navigation .user {
+        flex: 1 1 33.33%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .navigation li {
+        flex-basis: 100%;
+    }
+
+    .navigation .user {
+        flex-basis: 50%;
+    }
+}

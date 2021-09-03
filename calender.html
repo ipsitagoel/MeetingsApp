@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TimeTable | Schedule Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navnew.css">
+    <link rel="stylesheet" href="calender.css">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="#" id="logo" style="font-weight: 400;">MyMeetings</a>
+    <a id="calender" href="calender.html" style="margin-left: 65px;" class="active">Calendar</a>
+    <a id="meetings" href="meetings.html">Meeting</a>
+    <a id="teams" href="teams.html">Teams</a>
+    <a href="#" style="float:right; margin-right: 65px;" id="logout">Logout</a>
+    <a href="#" style="float:right; margin-right: 10px;" id="name-tag"><span style="color:#73C8D5">jane.doe@example.com</span></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+    <section class="body">
+        <div id="dat-time-info">
+            <div id="top-info">
+                <h1 id="title-page">Calendar</H1>
+                <hr class="heading-line"/>
+            </div>
+            <div id="date-info">
+                <div id="date-display">
+                    <span id="date-info-display">12 September 2020</span>
+                    <span style="display:block;margin-bottom: 5px;"></span>
+                    <span id="day-info-display">Saturday</span>
+                </div>
+                <input type="date" id="date-setter" value="2020-09-12" style="justify-content: flex-end" />
+            </div>
+        </div>
+    </section>
+
+<section class="body-1">
+        <!------------------------------------------------------Start Calendar----------------------------------------------->
+        <!-- The flexible grid (content) -->
+<!-- The flexible grid (content) -->
+<div class="row-1">
+    <div class="side">
+      <span>0</span>
+    </div>
+    <div class="main">
+      <div class="planner" style="height:50px;"></div>
+    </div>
+  </div>
+  
+  
+  <div class="row">
+      <div class="side">
+        <span>1</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>2</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>3</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>4</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>5</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>6</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;">
+          <div class="transbox">
+            <span class="title">Project kickoff</span>
+            <hr style="width: 100%; color: #ccc; margin-top: 1px; margin-bottom: 0%;" />
+            <span class="attendees">Attendees: mark@example.comjane@example.com</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>7</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>8</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>9</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;">
+          <div class="transbox-1">
+            <span class="title">AWS architecture</span>
+            <hr style="width: 100%; color: #ccc; margin-top: 1px; margin-bottom: 0%;" />
+            <span class="attendees">Attendees: john@example.comjane@example.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>10</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>11</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>12</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>13</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>14</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>15</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>16</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>17</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>18</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>19</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>20</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>21</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>22</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="side">
+        <span>23</span>
+      </div>
+      <div class="main">
+        <div class="planner" style="height:50px;"></div>
+      </div>
+    </div>
+
+    </section>
+
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navnew.css">
+    <link rel="stylesheet" href="meetings.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#" id="logo" style="font-weight: 400;">MyMeetings</a>
+        <a id="calender" href="calender.html" style="margin-left: 65px;">Calendar</a>
+        <a id="meetings" href="meetings.html" class="active">Meeting</a>
+        <a id="teams" href="teams.html">Teams</a>
+        <a href="#" style="float:right; margin-right: 65px;" id="logout">Logout</a>
+        <a href="#" style="float:right; margin-right: 10px;" id="name-tag"><span style="color:#73C8D5">jane.doe@example.com</span></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+    <section class="body">
+        <div id="top-info">
+            <h1 class="title-page">Meetings</h1>
+            <hr style="width: 100%;"/>
+        </div>
+        
+        <!--Start Tabs Area-->
+        <div class="tabset">
+            <!-- Tab 1 -->
+            <input type="radio" name="tabset" id="tab1" checked>
+            <label for="tab1">Filter / Search meetings</label>
+            <!-- Tab 2 -->
+            <input type="radio" name="tabset" id="tab2">
+            <label for="tab2">Add a meeting</label>
+            <!--End Tab Area-->
+
+
+            <div class="tab-panels">
+                <!---Start Filter / Search meetings Tab-->
+                <section id="filter" class="tab-panel">
+
+                    <!--Form Box-->
+                    <div class="forms">
+                        <form action="/action_page.php">
+                            <span style="font-weight: bolder; font-size: 1.5rem;">Search for meetings</span>
+                            <hr style="border: 1px solid #000; margin-top: 15px; margin-bottom: 20px; width: 100%;"/>
+                            <label for="date_1">Date</label>
+                            <select id="date_1" class="date-dropdown" name="date">
+                                <option>ALL</option>
+                                <option>PAST</option>
+                                <option selected="selected">TODAY</option>
+                                <option>UPCOMING</option>
+                            </select>
+
+                            <label for="desc-1">Search for</label>
+                            <br>
+                            <textarea class="desc" id="desc-1" name="description" placeholder="Search using words which describe the meeting" rows="4"></textarea>
+                            <br>
+
+                            <input type="submit" value="Search" style="margin-top: 0px;">
+                        </form>
+                    </div>
+
+                    <!--Meetings matching search criteria-->
+                    <div id="dat-time-info">
+                        <div>
+                            <div class="title-page">Meetings matching search criteria</div>
+                            <hr style="width: 100%;"/>
+                        </div>
+                    </div>
+
+                    <!--Card 1-->
+                    <div class="card">
+                        <div>
+                            <ul class="card-top-details">
+                                <li class="team-name">
+                                    12 September 2020
+                                    <span class="team-description" style="color:#000; font-size: medium;">06:00 - 07:00</span>
+                                </li>
+                                <li class="team-description">
+                                    <span style="color:#000;">Project kickoff</span>
+                                </li>
+                                <li>
+                                    <button class="execute-button">Excuse yourself</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr/>
+                        <div>
+                            <ul class="card-bottom-details">
+                                <li class="team-members">
+                                    <span style="color:#000; font-weight: bold">Attendees:</span> john@example.com, jane@example.com
+                                </li>
+                                <li class="team-id-addition">
+                                    <select class="attendees-dropdown" name="Select memeber" style="width: 150px;height:30px;border-radius: 3px;padding-left: 3px;">
+                                        <option value="" selected disabled hidden>Select memeber</option>
+                                        <option value="john@example.com">john@example.com</option>
+                                        <option value="jane@example.com">jane@example.com</option>
+                                        <option value="jane@example.com">mark@example.com</option>
+                                    </select>
+                                    <button class="add-button">Add</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Card 2-->
+                    <div class="card">
+                        <div>
+                            <ul class="card-top-details">
+                                <li class="team-name">
+                                    12 September 2020
+                                    <span class="team-description" style="color:#000; font-size: medium;">08:00 - 09:30</span>
+                                </li>
+                                <li class="team-description">
+                                    <span style="color:#000;">AWS architecture</span>
+                                </li>
+                                <li>
+                                    <button class="execute-button">Excuse yourself</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr/>
+                        <div>
+                            <ul class="card-bottom-details">
+                                <li class="team-members">
+                                    <span style="color:#000; font-weight: bold">Attendees:</span> john@example.com, jane@example.com
+                                </li>
+                                <li class="team-id-addition">
+                                    <select class="attendees-dropdown" style="width: 150px;height:30px;border-radius: 3px;padding-left: 3px;">
+                                        <option value="" selected disabled hidden>Select memeber</option>
+                                        <option value="john@example.com">john@example.com</option>
+                                        <option value="jane@example.com">jane@example.com</option>
+                                        <option value="jane@example.com">mark@example.com</option>
+                                    </select>
+                                    <button class="add-button">Add</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!--End Filter / Search meetings Tab-->
+                <!---Start Add a meeting Tab-->
+                <section id="add" class="tab-panel">
+
+                    <!--Form Box-->
+                    <div class="forms">
+                        <form action="/action_page.php">
+                            <span class="box-heading">Add a new meeting</span>
+                            <hr style="border: 1px solid #000; margin-top: 15px; margin-bottom: 20px; width: 100%; />
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date">
+                            <label>Start time (hh:mm)</label>
+                            <br>
+                            <select name="starthours" id="sthours">
+                                <option value="" selected disabled>--</option>
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+                            :
+                            <select name="startminutes" id="stmins">
+                                <option value="" selected disabled>--</option>
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="47">47</option>
+                                <option value="48">48</option>
+                                <option value="49">49</option>
+                                <option value="50">50</option>
+                                <option value="51">51</option>
+                                <option value="52">52</option>
+                                <option value="53">53</option>
+                                <option value="54">54</option>
+                                <option value="55">55</option>
+                                <option value="56">56</option>
+                                <option value="57">57</option>
+                                <option value="58">58</option>
+                                <option value="59">59</option>
+                            </select>
+                            <br>
+
+                            <label>End time (hh:mm)</label>
+                            <br>
+                            <select name="endthours" id="ehours">
+                                <option value="" selected disabled>--</option>
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+                            :
+                            <select name="eminutes" id="emins">
+                                <option value="" selected disabled>--</option>
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="47">47</option>
+                                <option value="48">48</option>
+                                <option value="49">49</option>
+                                <option value="50">50</option>
+                                <option value="51">51</option>
+                                <option value="52">52</option>
+                                <option value="53">53</option>
+                                <option value="54">54</option>
+                                <option value="55">55</option>
+                                <option value="56">56</option>
+                                <option value="57">57</option>
+                                <option value="58">58</option>
+                                <option value="59">59</option>
+                            </select>
+                            <br>
+
+                            <label for="desc-2">Description</label>
+                            <br>
+                            <textarea class="desc" id="desc-2" name="description" placeholder="What is agenda of the meeting?" rows="4"></textarea>
+                            <br>
+
+                            <label for="email">EmailIDs of attendees, or team's short</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com, @annual-day, mark@example.com">
+                            <span class="smalltext" style="font-size: 0.8rem;">Separate emailids / team short names by commas - team short names always begin with @ </span>
+
+                            <input type="submit" value="Add a meeting" style="width: 110px;">
+                        </form>
+                    </div>
+                </section>
+
+                <!---End Add a meeting Tab-->
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>
+
+</html>

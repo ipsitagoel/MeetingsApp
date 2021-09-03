@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TimeTable | Schedule Manager</title>
+    <link rel="stylesheet" href="navnew.css">
+    <link rel="stylesheet" href="teams.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#" id="logo" style="font-weight: 400;">MyMeetings</a>
+        <a id="calender" href="calender.html" style="margin-left: 65px;">Calendar</a>
+        <a id="meetings" href="meetings.html">Meeting</a>
+        <a id="teams" href="teams.html" class="active">Teams</a>
+        <a href="#" style="float:right; margin-right: 65px;" id="logout">Logout</a>
+        <a href="#" style="float:right; margin-right: 10px;" id="name-tag"><span style="color:#73C8D5">jane.doe@example.com</span></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <section class="body">
+        <div id="teams-info">
+            <div id="top-info">
+                <h1 id="title-page">Teams</h1>
+                <hr style="width:96%; margin-right: 65px;" />
+            </div>
+        </div>
+        <div id="subtitle">
+            View and edit teams you are part of
+        </div>
+        <div class="row">
+            <div class="column">
+        <div class="card">
+            <div>
+                <ul class="card-top-details">
+                    <li class="team-name">
+                        Customer acquisition campaign
+                    </li>
+                    <li class="team-id">
+                        @customer-acquisition
+                    </li>
+                    <li class="team-description">
+                        Team to come up with strategies to win over customers by end of FY21
+                    </li>
+                    <li>
+                        <button class="execute-button">Excuse yourself</button>
+                    </li>
+                </ul>
+            </div>
+            <hr/>
+            <div>
+                <ul class="card-bottom-details">
+                    <li class="team-members">
+                        <span style="font-weight: bold">Members:</span> john@example.com, jane@example.com
+                    </li>
+                    <li class="team-id-addition">
+                        <select style="width: 150px;height:30px;border-radius: 3px;padding-left: 3px;">
+                            <option value="" selected disabled hidden>Select memebers</option>
+                            <option value="john@example.com">john@example.com</option>
+                            <option value="jane@example.com">jane@example.com</option>
+                        </select>
+                        <button class="add-button">Add</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            </div>
+            <div class="column">
+        <div class="card-1">
+            <div>
+                <ul class="card-top-details">
+                    <li class="team-name">
+                        MERN stack training
+                    </li>
+                    <li class="team-id">
+                        @mern-stack-training
+                    </li>
+                    <li class="team-description">
+                        Group attending MERN stack training for website revamp project
+                    </li>
+                    <li>
+                        <button class="execute-button">Excuse yourself</button>
+                    </li>
+                </ul>
+            </div>
+            <hr/>
+            <div>
+                <ul class="card-bottom-details">
+                    <li class="team-members">
+                        <span style="font-weight: bold">Members:</span> jane@example.com, mark@example.com
+                    </li>
+                    <li class="team-id-addition">
+                        <select style="width: 150px;height:30px;border-radius: 3px;padding-left: 3px;">
+                            <option value="" selected disabled hidden>Select memebers</option>
+                            <option value="john@example.com">john@example.com</option>
+                            <option value="jane@example.com">jane@example.com</option>
+                        </select>
+                        <button class="add-button">Add</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+            <div class="column">
+                <div class="card-1">
+                    <form name="theform">
+                        <div>
+                            <ul class="card-top-details">
+                                <li class="team-name">
+                                    Name
+                                    <input type="text" style="padding: 2px 8px; margin: 0px 8px 0; width: 260px; font-size: 1.1rem; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                                </li>
+                                <li class="team-id">
+                                    Short name
+                                    <input type="text" style="padding: 2px 8px; margin: 0px 8px 0; width: 215px; font-size: 1rem; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                                </li>
+                                <li style="margin-top: 10px; font-size: 1.1em; font-weight: 400;">
+                                    Description
+                                    <textarea rows="2" style="padding: 2px 8px; margin: 0px 8px 0; width: 225px; font-size: 1rem; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"></textarea>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr style="margin-top: 20px;" />
+                        <div>
+                            <ul class="card-bottom-details">
+                                <li class="team-members">
+                                    <span style="font-weight: bold">Members</span>
+                                    <input type="text" style="padding: 2px 8px; margin: 0px 8px 0; width: 250px; font-size: 0.9rem; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                                    <button class="add-button" style="margin-top:15px" onClick="new Person()">Submit</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        <div class="column">
+        <div class="add-card">
+           <i id="add" class="fas fa-plus fa-4x"></i>
+        </div>
+        </div>
+    </div>
+    </section>
+  
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
+</body>
+
+</html>

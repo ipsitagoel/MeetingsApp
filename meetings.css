@@ -1,0 +1,396 @@
+.body {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.title-page {
+    font-weight: bolder;
+    font-size: 1.85em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/*Tabs*/
+.tabset>input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+
+.tabset .tab-panel {
+    display: none;
+}
+
+.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+.tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+.tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
+.tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
+.tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
+.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
+    display: block;
+}
+
+.tabset>label {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+    color: #06c;
+}
+
+/*.tabset>label::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #06c;
+}*/
+
+.tabset>label:hover,
+.tabset>input:focus+label {
+    color: #000;
+}
+
+.tabset>label:hover,
+.tabset>input:focus+label,
+.tabset>input:checked+label {
+    color: #000;
+}
+
+.tabset>input:checked+label {
+    border-color: #ccc;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+}
+
+.tab-panel {
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.tabset {
+    max-width: 100rem;
+    padding: 0px 0;
+    margin-top: 15px;
+    max-height: 100rem;
+}
+
+
+
+
+/*filter*/
+.date-dropdown {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.card-top-details {
+    list-style-type: none;
+    margin: 10px 10px 0px;
+    padding: 10px 10px 0px;
+}
+
+.card-1 {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #C4C4C5;
+    width: 350px;
+    height: 300px;
+    margin-top: 15px;
+}
+
+.team-name {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.team-id {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.team-description {
+    margin-top: 10px;
+    color: #C4C4C5;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.execute-button {
+    background-color: #DC3445;
+    width: 120px;
+    border: none;
+    color: white;
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0px 5px;
+    border-radius: 5px;
+}
+
+.card-bottom-details {
+    list-style-type: none;
+    margin: 10px 10px 0px;
+    padding: 10px 10px 0px;
+}
+
+.add-button {
+    background-color: #1b91a8;
+    width: 50px;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.team-id-addition {
+    margin: 7px 0px 10px;
+}
+
+.card {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #C4C4C5;
+    width: 100%;
+    height: fit-content;
+    /*margin-left: 35px;*/
+    margin-top: 15px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.add-card {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #C4C4C5;
+    width: 350px;
+    height: 300px;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+hr {
+    width: 97%
+}
+
+
+/*add*/
+.box-heading {
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+textarea:focus {
+    outline: none !important;
+
+    box-shadow: 0 0 8px #06c;
+}
+
+select {
+    width: 100%;
+    padding: 3px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select:focus {
+    outline: none !important;
+
+    box-shadow: 0 0 8px #06c;
+}
+
+.desc {
+    height: 4rem;
+    margin-bottom: 20px;
+}
+
+#sthours {
+    width: 60px;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#stmins {
+    width: 60px;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#ehours {
+    width: 60px;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#emins {
+    width: 60px;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    background-color: #1b91a8;
+    color: white;
+    padding: 8px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #006e9d;
+}
+
+.forms {
+    border-radius: 5px;
+    background-color: #63bccb;
+    padding: 20px;
+}
+
+span {
+    color: #fff;
+}
+
+[type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+}
+
+.selector_position {
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.smalltext {
+    color: #fff;
+    margin-right: 100%;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999;
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+@media all and (max-width:500px) {
+    .body {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .tabset>label {
+        font-size: smaller;
+    }
+}

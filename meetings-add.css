@@ -1,0 +1,11 @@
+.body{
+    margin-left:65px;
+    margin-right:65px;
+}
+
+#title-page{
+    font-weight: bolder;
+    font-size:1.85em;
+    margin-top:25px;
+    margin-bottom: 15px;
+}

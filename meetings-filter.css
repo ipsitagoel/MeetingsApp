@@ -1,0 +1,22 @@
+.body{
+    margin-left:65px;
+    margin-right:65px;
+}
+
+#title-page{
+    font-weight: bolder;
+    font-size:1.85em;
+    margin-top:25px;
+    margin-bottom: 15px;
+}
+
+#small-nav-left{
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+}
+
+.active-small{
+    border: 1px solid rgb(94, 94, 94);
+    padding-bottom: 6.5px;
+}

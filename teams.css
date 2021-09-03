@@ -1,0 +1,178 @@
+body {
+    overflow: auto;
+}
+
+#title-page {
+    font-weight: bolder;
+    font-size: 1.85em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 90%;
+}
+
+#subtitle {
+    margin-top: 15px;
+    /*margin-bottom: 15px;*/
+    font-weight: 600;
+    color: #C4C4C5;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-basis: 25%;
+}
+
+.card-top-details {
+    list-style-type: none;
+    margin: 10px 10px 0px;
+    padding: 20px 10px 0px;
+}
+
+.team-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.team-id {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.team-description {
+    margin-top: 10px;
+    color: #C4C4C5;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.execute-button {
+    background-color: #DC3445;
+    border: none;
+    color: white;
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0px 15px;
+    border-radius: 5px;
+}
+
+.card-bottom-details {
+    list-style-type: none;
+    margin: 5px 10px 5px;
+    padding: 0px 10px 5px;
+}
+
+.add-button {
+    background-color: #1b91a8;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.team-id-addition {
+    margin: 7px 0px 10px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.card {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #C4C4C5;
+    width: 360px;
+    height: 350px;
+    margin-right: 0px;
+    margin-top: 15px;
+}
+
+.card-1 {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #C4C4C5;
+    width: 360px;
+    height: 350px;
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-left: 110px;
+}
+
+.add-card {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #C4C4C5;
+    width: 360px;
+    height: 350px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+
+#add {
+    position: relative;
+    top: 140px;
+    left: 160px;
+}
+
+.body {
+    margin-left: 65px;
+}
+
+@media all and (max-width:500px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+    }
+
+    .card-1 {
+        margin-left: 0px;
+        width: auto;
+        height: auto;
+    }
+
+    .add-card {
+        margin-left: 0px;
+        width: 100%;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+
+    #add {
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    .body {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
